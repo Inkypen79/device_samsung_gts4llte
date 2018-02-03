@@ -655,31 +655,6 @@ vendor/bin/pd-mapper|8eb9717d2ee4da59c64ec89a85bf4e384663322b
 vendor/lib/libpdmapper.so|502c60cddc8964baa40f0cac0cc72e2f81307c44
 vendor/lib64/libpdmapper.so|dd589e58135e9ef3c952c5d0af9dce2c91df5014
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perf-profile0.conf
-vendor/etc/perf/perf-profile1.conf
-vendor/etc/perf/perf-profile2.conf
-vendor/etc/perf/perf-profile3.conf
-vendor/etc/perf/perf-profile4.conf
-vendor/etc/perf/perf-profile5.conf
-vendor/etc/perf/perf-profile6.conf
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-util.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-util.so
-
 # Perf IOP
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/libqti-iopd-client.so
@@ -973,8 +948,6 @@ vendor/etc/init/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-servic
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/wifi_qcom.rc
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/ReferenceFeature.xml
 vendor/etc/process_authenticator/pa_config
 vendor/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat
 vendor/etc/saiv/gae/MeanFea.bin
@@ -1236,8 +1209,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqsap_sdk.so
 vendor/lib/libqseed3.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-utils.so
 vendor/lib/libqtigef.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/librmp.so
@@ -1322,9 +1293,7 @@ vendor/lib64/libUBWC.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
-vendor/lib64/libadaptlaunch.so
 vendor/lib64/libadiertac.so
-vendor/lib64/libappclassifier.so
 vendor/lib64/libarac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
@@ -1346,7 +1315,6 @@ vendor/lib64/libfastcrc.so
 vendor/lib64/libfastcvadsp_stub.so
 vendor/lib64/libfocuspeaking.so
 vendor/lib64/libfocuspeaking_interface.so
-vendor/lib64/libgameoptfeature.so
 vendor/lib64/libgarden.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
@@ -1366,13 +1334,10 @@ vendor/lib64/libhypermotion_interface.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib64/liblearningmodule.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdsprpc.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
@@ -1391,11 +1356,8 @@ vendor/lib64/libqdp.so
 vendor/lib64/libqisl.so
 vendor/lib64/libqsap_sdk.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-utils.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libreffeature.so
 vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsavsac.so
