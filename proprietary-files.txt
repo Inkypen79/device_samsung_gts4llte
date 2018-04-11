@@ -1022,14 +1022,6 @@ vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
-# Thermal
-vendor/bin/hw/android.hardware.thermal@1.0-service
-vendor/etc/init/android.hardware.thermal@1.0-service.rc
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib/hw/thermal.msm8998.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib64/hw/thermal.msm8998.so
-
 # Thermal (Qualcomm)
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
