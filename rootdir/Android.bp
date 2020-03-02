@@ -95,12 +95,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.qseecomd.sh",
-    src: "bin/init.qti.qseecomd.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "qca6234-service.sh",
     src: "bin/qca6234-service.sh",
     soc_specific: true,
