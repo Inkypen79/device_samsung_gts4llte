@@ -82,7 +82,6 @@ PRODUCT_PACKAGES += \
     init.qti.can.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
-    init.qti.qseecomd.sh \
     qca6234-service.sh \
 
 PRODUCT_PACKAGES += \
