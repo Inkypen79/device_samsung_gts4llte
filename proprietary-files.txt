@@ -1179,7 +1179,6 @@ odm/HWRDB/viresources.txt
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
-vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/hw/vendor.samsung.hardware.base@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.light@3.0-service
@@ -1283,7 +1282,6 @@ vendor/etc/init/pa_daemon_qsee.rc
 vendor/etc/init/secure_storage_daemon_qsee.rc
 vendor/etc/init/snap_utility.rc
 vendor/etc/init/vaultkeeper_common.rc
-vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.samsung.hardware.base@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.light@3.0-service.rc
@@ -1511,8 +1509,6 @@ vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcirrusspkrprot.so
 vendor/lib/libcomprcapture.so
 vendor/lib/libcppf.so
-vendor/lib/libcryptfshwcommon.so
-vendor/lib/libcryptfshwhidl.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdisp-aba.so
 vendor/lib/libdrc.so
@@ -1657,7 +1653,6 @@ vendor/lib/libvqzip.so
 vendor/lib/libwpa_drv_oem.so
 vendor/lib/libxcv.camera.samsung.so
 vendor/lib/sensor_calibrate.so
-vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib/vendor.samsung.camera.device@4.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
@@ -1710,8 +1705,6 @@ vendor/lib64/libblurdetection_interface.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcryptfshwcommon.so
-vendor/lib64/libcryptfshwhidl.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdrmtime.so
@@ -1842,7 +1835,6 @@ vendor/lib64/libvndsecril-client.so
 vendor/lib64/libwpa_drv_oem.so
 vendor/lib64/libxcv.camera.samsung.so
 vendor/lib64/sensor_calibrate.so
-vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib64/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib64/vendor.samsung.camera.device@4.0-impl.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
