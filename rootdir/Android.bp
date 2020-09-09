@@ -156,3 +156,9 @@ prebuilt_etc {
     src: "etc/fstab.qcom",
     soc_specific: true,
 }
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "etc/fstab.zram",
+    soc_specific: true,
+}
