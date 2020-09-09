@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.zram \
     init.gts4llte.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
