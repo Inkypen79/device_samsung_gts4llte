@@ -38,6 +38,8 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libhifills.so', 'vendor/lib64/libhifills.so'): blob_fixup()
         .add_needed('libdemangle.so')
         .add_needed('libprocessgroup.so'),
+    ('vendor/lib/libsec-ril.so', 'vendor/lib64/libsec-ril.so'): blob_fixup()
+        .replace_needed('libcutils.so', 'libcutils-v29.so'),
     ('vendor/lib/libstagefright_omx_vendor.so'): blob_fixup()
         .add_needed('libshim_stagefright_foundation.so'),
 }  # fmt: skip
