@@ -1,0 +1,6 @@
+cc_library_shared {
+    name: "libshim_stagefright_foundation",
+    srcs: ["MediaDefs.cpp"],
+    shared_libs: ["libstagefright_foundation"],
+    vendor: true,
+}
