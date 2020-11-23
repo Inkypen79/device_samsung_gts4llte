@@ -1067,14 +1067,6 @@ vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 
-# VR
-vendor/bin/hw/android.hardware.vr@1.0-service
-vendor/etc/init/android.hardware.vr@1.0-service.rc
-vendor/lib/hw/android.hardware.vr@1.0-impl.so
-vendor/lib/hw/vr.msm8998.so
-vendor/lib64/hw/android.hardware.vr@1.0-impl.so
-vendor/lib64/hw/vr.msm8998.so
-
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/hw/hostapd
