@@ -10,6 +10,10 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
