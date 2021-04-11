@@ -35,12 +35,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.crashdata.sh",
-    src: "bin/init.qcom.crashdata.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     soc_specific: true,
