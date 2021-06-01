@@ -8,7 +8,7 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
 # ADSP modules
-lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -122,8 +122,8 @@ vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libsecaudiocoreutils.so
 
 # Audio configs
-etc/audio_effects.conf
-etc/audio_effects_tdm.xml
+system/etc/audio_effects.conf
+system/etc/audio_effects_tdm.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/audio_configs.xml
 vendor/etc/audio_effects.conf
@@ -395,8 +395,8 @@ vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Display
-lib/egl/libGLES_android.so
-lib64/egl/libGLES_android.so
+system/lib/egl/libGLES_android.so
+system/lib64/egl/libGLES_android.so
 product/lib/vendor.qti.hardware.display.composer@2.0.so
 product/lib64/vendor.qti.hardware.display.composer@2.0.so
 vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
@@ -561,8 +561,8 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 
 # DRM (Qualcomm Secure Execution Environment)
-lib/vendor.qti.hardware.qseecom@1.0.so
-lib64/vendor.qti.hardware.qseecom@1.0.so
+system/lib/vendor.qti.hardware.qseecom@1.0.so
+system/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
@@ -594,7 +594,7 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
-lib64/vendor.trustonic.tee@1.0.so
+system/lib64/vendor.trustonic.tee@1.0.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/bin/hw/vendor.trustonic.tee@1.0-service
 vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service
@@ -741,23 +741,23 @@ vendor/lib/hw/lights.msm8998.so
 vendor/lib64/hw/lights.msm8998.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libQSEEComAPI_system.so
-lib/libhdcp2.so
-lib/libsavscmn.so
-lib/libsecnativefeature.so
-lib/libsfextcp.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_hdcp.so
-lib/libstagefright_httplive_sec.so
-lib/libstagefright_local_cache.so
-lib64/libQSEEComAPI_system.so
-lib64/libsavscmn.so
-lib64/libsecnativefeature.so
-lib64/libsfextcp.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_httplive_sec.so
-lib64/libstagefright_local_cache.so
+system/etc/seccomp_policy/mediacodec.policy
+system/lib/libQSEEComAPI_system.so
+system/lib/libhdcp2.so
+system/lib/libsavscmn.so
+system/lib/libsecnativefeature.so
+system/lib/libsfextcp.so
+system/lib/libstagefright_codecbase.so
+system/lib/libstagefright_hdcp.so
+system/lib/libstagefright_httplive_sec.so
+system/lib/libstagefright_local_cache.so
+system/lib64/libQSEEComAPI_system.so
+system/lib64/libsavscmn.so
+system/lib64/libsecnativefeature.so
+system/lib64/libsfextcp.so
+system/lib64/libstagefright_codecbase.so
+system/lib64/libstagefright_httplive_sec.so
+system/lib64/libstagefright_local_cache.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -835,7 +835,7 @@ vendor/etc/dolby/dax-default.xml
 vendor/lib/libdeccfg.so
 
 # Media configs
-etc/media_profiles.xml
+system/etc/media_profiles.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_ac4.xml
 vendor/etc/media_codecs_ddp.xml
@@ -964,9 +964,9 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Radio (IMS)
-bin/charon
-lib64/libcharon.so
-lib64/libstrongswan.so
+system/bin/charon
+system/lib64/libcharon.so
+system/lib64/libstrongswan.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.1.so
@@ -1016,7 +1016,7 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 
 # Sensors configs
-etc/sensors/sensor_def_qcomdev.conf
+system/etc/sensors/sensor_def_qcomdev.conf
 vendor/etc/sensors/hals.conf
 
 # Soter
