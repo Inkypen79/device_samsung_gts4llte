@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery \
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_gts4l)
+
 # ION
 $(call soong_config_set_bool,libion,legacy_impl,true)
 
