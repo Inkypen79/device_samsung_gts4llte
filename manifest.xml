@@ -71,11 +71,6 @@
         <fqname>@3.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.light</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::ILight/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.media.c2</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IComponentStore/default</fqname>
@@ -338,11 +333,6 @@
         <name>vendor.samsung.hardware.gnss</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ISehGnss/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.light</name>
-        <transport>hwbinder</transport>
-        <fqname>@3.0::ISehLight/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.media.converter</name>

@@ -724,10 +724,6 @@ vendor/lib64/libkeymaster3device.so
 vendor/lib64/libkeymaster_helper_vendor.so
 vendor/lib64/libskeymaster3device.so
 
-# Light
-vendor/lib/hw/lights.msm8998.so
-vendor/lib64/hw/lights.msm8998.so
-
 # Media
 system/etc/seccomp_policy/mediacodec.policy
 system/lib/libQSEEComAPI_system.so
@@ -1119,7 +1115,6 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/vendor.samsung.hardware.base@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
-vendor/bin/hw/vendor.samsung.hardware.light@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.media.converter@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service
@@ -1209,7 +1204,6 @@ vendor/etc/init/snap_utility.rc
 vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.samsung.hardware.base@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.light@3.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service.rc
@@ -1306,7 +1300,6 @@ vendor/firmware/leia_pm4_470.fw
 vendor/firmware/wlanmdsp.mbn
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
-vendor/lib/hw/vendor.samsung.hardware.light@3.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.snap@1.1-impl.so
 vendor/lib/P08UL_libTsAccmFront.so
 vendor/lib/P08UL_libTsAeFront.so
@@ -1571,7 +1564,6 @@ vendor/lib/vendor.samsung.camera.device@4.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@4.0.so
 vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
-vendor/lib/vendor.samsung.hardware.light@3.0.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.0.so
@@ -1580,7 +1572,6 @@ vendor/lib/vendor.samsung.hardware.snap@1.0.so
 vendor/lib/vendor.samsung.hardware.snap@1.1.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
-vendor/lib64/hw/vendor.samsung.hardware.light@3.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.snap@1.1-impl.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/libAlacSwDec.so
@@ -1742,7 +1733,6 @@ vendor/lib64/vendor.samsung.hardware.base@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device@4.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@3.0.so
-vendor/lib64/vendor.samsung.hardware.light@3.0.so
 vendor/lib64/vendor.samsung.hardware.media.converter@1.0.so
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
