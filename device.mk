@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery \
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.samsung
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
