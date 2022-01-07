@@ -1349,7 +1349,6 @@ vendor/firmware/dbmd8_va_fw.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 vendor/firmware/wlanmdsp.mbn
-vendor/lib/hw/activity_recognition.msm8998.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib/hw/vendor.samsung.hardware.light@3.0-impl.so
@@ -1618,7 +1617,6 @@ vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/vendor.samsung.hardware.tlc.ucm@1.0-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.ucm@1.0.so
-vendor/lib64/hw/activity_recognition.msm8998.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib64/hw/vendor.samsung.hardware.light@3.0-impl.so
