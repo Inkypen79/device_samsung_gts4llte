@@ -172,6 +172,24 @@
         "-novr"
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "TouchscreenEnable",
+      "Path": "/sys/class/sec/tsp/input/enabled",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "DoubleTapToWakeEnable",
+      "Path": "/sys/class/sec/tsp/cmd",
+      "Values": [
+        "aot_enable,0",
+        "aot_enable,1"
+      ],
+      "DefaultIndex": 0
     }
   ],
   "Actions": [
@@ -546,6 +564,18 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "710000000"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "TouchscreenEnable",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWakeEnable",
+      "Duration": 0,
+      "Value": "aot_enable,1"
     }
   ]
 }
