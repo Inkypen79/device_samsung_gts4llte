@@ -31,6 +31,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/gts4llte:lib_SoundBooster_ver900)
 
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     device/samsung/gts4llte/audio/configs/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
