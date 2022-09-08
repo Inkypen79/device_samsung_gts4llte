@@ -6,6 +6,10 @@
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 27
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -14,6 +18,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet

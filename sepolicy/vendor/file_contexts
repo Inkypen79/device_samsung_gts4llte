@@ -1,3 +1,8 @@
+# Block devices
+/dev/block/platform/soc/1da4000\.ufshc/by-name/system	u:object_r:system_block_device:s0
+/dev/block/platform/soc/1da4000\.ufshc/by-name/odm	u:object_r:system_block_device:s0
+/dev/block/platform/soc/1da4000\.ufshc/by-name/vendor	u:object_r:system_block_device:s0
+
 # Rootfs
 /bt_firmware(/.*)?					u:object_r:bt_firmware_file:s0
 /factory(/.*)?						u:object_r:efs_file:s0
