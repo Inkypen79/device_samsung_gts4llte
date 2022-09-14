@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     vendor.qti.hardware.memtrack-service
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
