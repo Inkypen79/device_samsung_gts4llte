@@ -921,7 +921,6 @@ vendor/lib64/hw/power.qcom.so
 
 # Radio
 vendor/bin/hw/rild
-vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/mdm_helper
 vendor/bin/netmgrd
@@ -945,7 +944,6 @@ vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
 vendor/lib/librmnetctl.so
 vendor/lib/libxml.so
-vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmimgload.so
 vendor/lib64/libnetmgr.so
@@ -959,7 +957,6 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/librmnetctl.so
 vendor/lib64/libxml.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Radio (IMS)
 system/bin/charon
