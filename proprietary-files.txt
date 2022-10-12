@@ -770,7 +770,7 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 
 # Sensors configs
-system/etc/sensors/sensor_def_qcomdev.conf
+system/etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/etc/sensors/hals.conf
 
 # Soter
