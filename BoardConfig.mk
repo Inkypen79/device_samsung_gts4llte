@@ -71,6 +71,10 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 419430400
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 57140899840
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/efs:/efs \
+    /mnt/vendor/efs:/factory
+
 # Partitions - dynamic
 ALL_PARTITIONS := product system system_ext odm vendor
 
