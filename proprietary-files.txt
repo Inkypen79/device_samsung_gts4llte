@@ -627,7 +627,6 @@ vendor/lib/liblocationservice_glue.so
 vendor/lib/liblowi_client.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libpdmapper.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libqdma_file_agent.so
 vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_qmux.so
@@ -661,7 +660,6 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libpdmapper.so
-vendor/lib64/libperipheral_client.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_qmux.so
@@ -894,6 +892,12 @@ vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
+
+# Peripheral manager - from sld_sprout RKQ1.210607.001/00WW_3_71E
+vendor/bin/pm-proxy|42383b9163716d8e6d81f0516e9cf09f22ea8b06
+vendor/bin/pm-service|b0a5d3491615ef9a237d93a393082105e3c0097c
+vendor/lib/libperipheral_client.so|8f7e9ebd1a8dc6afc878b97c078a3deb97963d68
+vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Power
 vendor/bin/hw/android.hardware.power@1.0-service
@@ -1154,8 +1158,6 @@ vendor/bin/mm-qomx-idec-test
 vendor/bin/mm-qomx-ienc-test
 vendor/bin/nqnfcinfo
 vendor/bin/pktlogconf
-vendor/bin/pm-proxy
-vendor/bin/pm-service
 vendor/bin/qjpeg-dma-test
 vendor/bin/qseecom_sample_client
 vendor/bin/secril_config_svc
