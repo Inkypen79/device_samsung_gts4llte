@@ -99,5 +99,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/samsung
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/gts4llte/gts4llte-vendor.mk)
