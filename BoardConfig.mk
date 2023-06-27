@@ -1,20 +1,161 @@
 DEVICE_PATH := device/samsung/gts4llte
 BOARD_VENDOR := samsung
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2022-06-01
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := cortex-a73
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
+
+TARGET_USES_64_BIT_BINDER := true
+
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
+# Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
+# Audio
+AUDIO_FEATURE_ENABLED_AHAL_EXT := false
+AUDIO_FEATURE_ENABLED_DYNAMIC_ECNS := false
+AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
+AUDIO_FEATURE_ENABLED_FFV := false
+AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := false
+AUDIO_FEATURE_ENABLED_KEEP_ALIVE_ARM_FFV := false
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+BOARD_SUPPORTS_SOUND_TRIGGER := true
+BOARD_USES_ALSA_AUDIO := true
+USE_CUSTOM_AUDIO_POLICY := 1
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := msm8998
+TARGET_NO_BOOTLOADER := true
+
+# Camera
+TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_USES_QTI_CAMERA_DEVICE := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
+# Display
+TARGET_SCREEN_DENSITY := 320
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_HWC2 := true
+TARGET_USES_ION := true
+
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/android.hardware.atrace@1.0-service.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/android.hardware.cas@1.1-service.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/android.hardware.gnss@2.0-service-qti.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.gnss@3.0-service.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.samsung.hardware.base@1.0-service.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml
+
+# Kernel
+BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1
+BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image'
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive loop.max_part=7
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
+BOARD_RAMDISK_OFFSET := 0x02000000
+TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+#TARGET_KERNEL_CLANG_COMPILE := false
+TARGET_KERNEL_CONFIG := gts4llte_eur_open_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/gts4l
+ 
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_CACHEIMAGE_PARTITION_SIZE := 419430400
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_ODMIMAGE_PARTITION_SIZE := 645922816
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4404019200
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 57140899840
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_SIZE := 734003200
+BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_ROOT_EXTRA_FOLDERS := efs omr
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
+# Platform
+TARGET_BOARD_PLATFORM := msm8998
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
+
+# QCOM
+BOARD_USES_QCOM_HARDWARE := true
+
+# Recovery
+TARGET_OTA_ASSERT_DEVICE := gts4llte
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2022-06-01
+
+# SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/
+
+# Treble
+BOARD_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# Verified Boot
+BOARD_AVB_ENABLE := false
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
+# Wifi
+BOARD_HAS_QCOM_WLAN := true
+BOARD_HAS_QCOM_WLAN_SDK := true
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
+WIFI_DRIVER_FW_PATH_AP := "ap"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 -include vendor/samsung/gts4llte/BoardConfigVendor.mk

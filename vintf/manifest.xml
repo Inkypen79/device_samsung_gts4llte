@@ -2,22 +2,22 @@
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
-        <version>5.0</version>
+        <version>6.0</version>
         <interface>
             <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@5.0::IDevicesFactory/default</fqname>
+        <fqname>@6.0::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
-        <version>5.0</version>
+        <version>6.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@5.0::IEffectsFactory/default</fqname>
+        <fqname>@6.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -253,12 +253,12 @@
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>2.2</version>
         <interface>
             <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::ISoundTriggerHw/default</fqname>
+        <fqname>@2.2::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -291,16 +291,6 @@
         <fqname>@1.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.usb</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IUsb</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IUsb/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
         <version>1.3</version>
@@ -319,36 +309,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVr/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.3</version>
-        <interface>
-            <name>IWifi</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.3::IWifi/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi.hostapd</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IHostapd</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IHostapd/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.ant</name>
