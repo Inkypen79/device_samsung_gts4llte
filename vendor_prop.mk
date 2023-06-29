@@ -218,7 +218,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     sdm.perf_hint_window=50 \
 # QTI
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.va_aosp.support=1
+PRODUCT_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \

@@ -74,6 +74,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
+    android.hardware.camera.provider@2.5-legacy \
+    libcamera2ndk_vendor \
+    libgui_vendor \
     vendor.qti.hardware.camera.device@1.0
 
 # Configstore
@@ -103,6 +106,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
+
+# Encryption
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
@@ -205,6 +212,11 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \

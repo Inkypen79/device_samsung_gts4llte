@@ -158,13 +158,9 @@ vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 lib64/libseemore.so
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
 vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/android.hardware.camera.provider@2.5-legacy.so
 vendor/lib/hw/camera.msm8998.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libflash_pmic.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -183,19 +179,15 @@ vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libvdis_core.so
 vendor/lib/libvdis_interface.so
 vendor/lib/libvideoutils.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@4.0.so
 vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libseemore.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvdis_interface.so
 vendor/lib64/libvideoutils.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device@4.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@3.0.so
@@ -778,7 +770,6 @@ vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vndk/libstagefright_foundation.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
@@ -816,10 +807,6 @@ lib/libqti_performance.so
 lib64/libqti-perfd-client_system.so
 lib64/libqti-util_system.so
 lib64/libqti_performance.so
-product/lib/vendor.qti.hardware.perf@1.0.so
-product/lib/vendor.qti.hardware.perf@2.0.so
-product/lib64/vendor.qti.hardware.perf@1.0.so
-product/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
@@ -842,8 +829,6 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters-ns.so
@@ -854,8 +839,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
 # Perf-IOP
 product/lib/vendor.qti.hardware.iop@1.0.so
@@ -1536,8 +1519,6 @@ vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib/vndk/libstagefright_omx_utils.so
-vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib/Y13UL_libchromatix_s5k3l2xx_common.so
 vendor/lib/Y13UL_libchromatix_s5k3l2xx_common_video.so
 vendor/lib/Y13UL_libchromatix_s5k3l2xx_cpp_preview_3rd.so
