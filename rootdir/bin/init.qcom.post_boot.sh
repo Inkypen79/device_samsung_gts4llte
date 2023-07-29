@@ -375,10 +375,6 @@ case "$target" in
         # re-enable thermal and BCL hotplug
         echo 1 > /sys/module/msm_thermal/core_control/enabled
 
-	# Set runtime stune value
-	echo 0 > /dev/stune/schedtune.prefer_idle
-	echo 0 > /dev/stune/schedtune.boost
-
         for cpubw in /sys/class/devfreq/*qcom,cpubw*
         do
             echo "bw_hwmon" > $cpubw/governor

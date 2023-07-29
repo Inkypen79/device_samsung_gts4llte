@@ -196,7 +196,6 @@ on property:sys.boot_completed=1
 
 on property:vendor.post_boot.parsed=1
     # Setup permission for powerHAL
-    chown system system /dev/stune/top-app/schedtune.boost
     chown system system /dev/cpu_dma_latency
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
@@ -206,7 +205,6 @@ on property:vendor.post_boot.parsed=1
     chown root root /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
     chown root root /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
 
-    chmod 0664 /dev/stune/top-app/schedtune.boost
     chmod 0664 /dev/cpu_dma_latency
     chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
     chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq

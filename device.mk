@@ -248,6 +248,7 @@ PRODUCT_PACKAGES += \
     init.samsung.wifi.rc \
     init.samsung.rc \
     init.target.rc \
+    init.uclamp.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc \
     ueventd.samsung.rc
