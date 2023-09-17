@@ -701,8 +701,6 @@ vendor/lib64/vendor.samsung.hardware.health@1.0.so
 # IPA
 vendor/bin/ipacm
 vendor/bin/ipacm-diag
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/IPACM_cfg.xml
 vendor/lib64/libipanat.so
 vendor/lib64/libnetfilter_conntrack.so
