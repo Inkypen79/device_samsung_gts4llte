@@ -66,6 +66,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 # Camera
+$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service
 
