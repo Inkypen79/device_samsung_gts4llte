@@ -175,3 +175,6 @@ vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 vendor.vidc.enc.disable.pq=true
 
+# USB
+vendor.usb.controller=a800000.dwc3
+vendor.usb.device=a800000.ssusb
