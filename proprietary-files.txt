@@ -410,11 +410,11 @@ vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so
 vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
@@ -425,7 +425,6 @@ vendor/lib/hw/gralloc.msm8998.so
 vendor/lib/hw/hwcomposer.msm8998.so
 vendor/lib/hw/memtrack.msm8998.so
 vendor/lib/hw/vulkan.msm8998.so
-vendor/lib/libEGL_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libdiag.so
 vendor/lib/libdrmutils.so
@@ -459,11 +458,11 @@ vendor/lib/vendor.display.config@1.9.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so
 vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
@@ -474,7 +473,6 @@ vendor/lib64/hw/gralloc.msm8998.so
 vendor/lib64/hw/hwcomposer.msm8998.so
 vendor/lib64/hw/memtrack.msm8998.so
 vendor/lib64/hw/vulkan.msm8998.so
-vendor/lib64/libEGL_adreno.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdrmutils.so
@@ -1567,7 +1565,6 @@ vendor/lib/libpn551_fw.so
 vendor/lib/libpn553_fw.so
 vendor/lib/libpn557_fw.so
 vendor/lib/libpvr.so
-vendor/lib/libq3dtools_adreno.so
 vendor/lib/libqcbor.so
 vendor/lib/libqdi.so
 vendor/lib/libqdma.so
@@ -1752,7 +1749,6 @@ vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libpadm.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libpvr.so
-vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdma.so
