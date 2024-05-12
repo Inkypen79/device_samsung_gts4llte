@@ -3,6 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 27
 
