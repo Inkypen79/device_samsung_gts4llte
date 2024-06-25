@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/samsung/gts4llte
 
+# A/B
+AB_OTA_UPDATER := false
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
