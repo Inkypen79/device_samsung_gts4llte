@@ -688,10 +688,7 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 
 # Health
-vendor/bin/hw/android.hardware.health@2.0-service.samsung
 vendor/bin/hvdcp_opti
-vendor/etc/init/android.hardware.health@2.0-service.samsung.rc
-vendor/lib64/vendor.samsung.hardware.health@1.0.so
 
 # IPA
 vendor/bin/ipacm
