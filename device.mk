@@ -6,6 +6,10 @@
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 27
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
@@ -18,9 +22,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
