@@ -206,9 +206,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
-
-$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-gts4l)
+    android.hardware.power-service.lineage-libperfmgr \
+    libqti-perfd-client
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
@@ -261,6 +260,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/samsung \
     vendor/qcom/opensource/usb/etc
 
