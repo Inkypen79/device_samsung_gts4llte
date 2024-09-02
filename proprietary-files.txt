@@ -1189,8 +1189,8 @@ vendor/etc/carrier/USC/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/carrier/VMU/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/carrier/VZW/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/carrier/XAS/permissions/android.hardware.telephony.cdma.xml
-vendor/etc/data/dsi_config.xml
-vendor/etc/data/netmgr_config.xml
+vendor/etc/data/dsi_config.xml;FIX_XML
+vendor/etc/data/netmgr_config.xml;FIX_XML
 vendor/etc/firmware/P08UL_s5k4h5yc_chromatix.xml
 vendor/etc/firmware/Y13UL_s5k3l2xx_chromatix.xml
 vendor/etc/firmware/msm8998_camera_gts4.xml
