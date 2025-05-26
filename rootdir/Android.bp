@@ -115,13 +115,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.msm.usb.configfs.rc",
-    src: "etc/init.msm.usb.configfs.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
-
-prebuilt_etc {
     name: "init.qcom.factory.rc",
     src: "etc/init.qcom.factory.rc",
     sub_dir: "init/hw",
