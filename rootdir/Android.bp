@@ -65,12 +65,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.can.sh",
-    src: "bin/init.qti.can.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qti.fm.sh",
     src: "bin/init.qti.fm.sh",
     soc_specific: true,

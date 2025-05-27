@@ -228,7 +228,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sdio.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.can.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
     qca6234-service.sh \
