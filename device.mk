@@ -10,6 +10,12 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Filesystem
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
