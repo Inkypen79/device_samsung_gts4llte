@@ -305,4 +305,16 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ITeeRegistry/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.lineage.livedisplay</name>
+        <version>1</version>
+        <interface>
+            <name>IAdaptiveBacklight</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
