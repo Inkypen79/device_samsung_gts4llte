@@ -1,2 +1,6 @@
+# Display
+type vendor_sysfs_display, fs_type, sysfs_type;
+type vendor_sysfs_mdnie, fs_type, sysfs_type;
+
 type misc_file, fs_type;
 type omr_file, fs_type;

@@ -16,3 +16,4 @@
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service\.samsung-msm8998	u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.samsung			u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay-service\.samsung-qcom		u:object_r:hal_lineage_livedisplay_qti_exec:s0

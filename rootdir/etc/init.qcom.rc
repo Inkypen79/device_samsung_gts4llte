@@ -112,6 +112,12 @@ on early-boot
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
 on boot
+    # LiveDisplay
+    chown system system /sys/class/lcd/panel/power_reduce
+    chmod 0660 /sys/class/lcd/panel/power_reduce
+    chown system system /sys/class/mdnie/mdnie/mode
+    chmod 0660 /sys/class/mdnie/mdnie/mode
+
     # Permissions for Power HAL
     chown system system /sys/class/sec/tsp/cmd
 
