@@ -769,6 +769,12 @@
       "Value": "1132800"
     },
     {
+      "PowerHint": "GAME_LOADING",
+      "Node": "UclampTAMin",
+      "Duration": 10000,
+      "Value": "100"
+    },
+    {
       "PowerHint": "INTERACTIVE",
       "Node": "TouchscreenEnable",
       "Duration": 0,
