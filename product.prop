@@ -28,6 +28,7 @@ bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 
 # Display - blurs, hidden under dev option
+debug.renderengine.blur_algorithm=kawase2
 ro.launcher.blur.appLaunch=0
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
