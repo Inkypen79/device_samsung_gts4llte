@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery \
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
