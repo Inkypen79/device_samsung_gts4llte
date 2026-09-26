@@ -34,6 +34,8 @@ $(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsu
 PRODUCT_PACKAGES += \
     SamsungDAP
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     device/samsung/gts4llte/audio/configs/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
