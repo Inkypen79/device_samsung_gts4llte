@@ -381,29 +381,9 @@
         <fqname>@1.0::ISehHdcpKeyProvisioning/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung.hardware.security.proca</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::ISehProca/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.securestorage</name>
-        <transport>hwbinder</transport>
-        <fqname>@3.0::ISehSecureStorage/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.vaultkeeper</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISehVaultKeeper/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.samsung.hardware.security.widevine.keyprovisioning</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISehWidevineKeyProvisioning/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.tlc.ucm</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISehUcm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.vibrator</name>
