@@ -35,6 +35,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/wvkprov'): blob_fixup()
         .add_needed('liblog.so'),
+    ('vendor/lib/libhifills.so', 'vendor/lib64/libhifills.so'): blob_fixup()
+        .add_needed('libdemangle.so'),
     ('vendor/lib/libstagefright_omx_vendor.so'): blob_fixup()
         .add_needed('libshim_stagefright_foundation.so'),
 }  # fmt: skip
