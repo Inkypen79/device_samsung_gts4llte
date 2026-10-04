@@ -498,6 +498,10 @@ on post-fs-data
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
 
+# USB
+on property:ro.boot.em.model=*
+    setprop vendor.usb.product_string ${ro.boot.em.model}
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
