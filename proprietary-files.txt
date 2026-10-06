@@ -589,17 +589,13 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Gatekeeper
 system/lib64/vendor.trustonic.tee@1.0.so
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/bin/hw/vendor.trustonic.tee@1.0-service
 vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/etc/init/vendor.trustonic.tee@1.0-service.rc
 vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
 vendor/lib/hw/gatekeeper.msm8998.so
-vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/hw/gatekeeper.msm8998.so
-vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.teeregistry@1.0.so
 
@@ -707,13 +703,9 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/hw/keystore.msm8998.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/libskeymaster3device.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib64/hw/keystore.mdfpp.so
 vendor/lib64/hw/keystore.msm8998.so
 vendor/lib64/libkeymaster2_mdfpp.so
