@@ -92,6 +92,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.samsung.bsp.rc \
+    init.samsung.wifi.rc \
     init.samsung.rc \
     init.target.rc \
     init.recovery.qcom.rc \

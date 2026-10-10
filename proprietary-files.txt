@@ -1182,7 +1182,6 @@ vendor/etc/init/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-servic
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/vndservicemanager.rc
-vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/ReferenceFeature.xml
