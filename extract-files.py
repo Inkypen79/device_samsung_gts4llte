@@ -42,6 +42,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcutils.so', 'libcutils-v29.so'),
     ('vendor/lib/libstagefright_omx_vendor.so'): blob_fixup()
         .add_needed('libshim_stagefright_foundation.so'),
+    ('vendor/lib64/hw/gatekeeper.mdfpp.so', 'vendor/lib64/libkeymaster2_mdfpp.so', 'vendor/lib64/libkeymaster_helper_vendor.so'): blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
