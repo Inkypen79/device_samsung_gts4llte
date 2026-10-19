@@ -13,6 +13,11 @@ $(call inherit-product, device/samsung/gts4llte/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Gapps
+ifeq ($(WITH_GMS), true)
+$(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
 PRODUCT_DEVICE := gts4llte
 PRODUCT_NAME := lineage_gts4llte
 PRODUCT_BRAND := samsung
