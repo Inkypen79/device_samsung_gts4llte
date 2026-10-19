@@ -10,6 +10,21 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 27
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    audio.r_submix.default \
+    audio.usb.default \
+
+PRODUCT_PACKAGES += \
+    libaudio-resampler \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
