@@ -40,6 +40,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CONFIG := gts4llte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/gts4llte
 
+# Media
+TARGET_USES_ION := true
+
 # Lights
 $(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
 
