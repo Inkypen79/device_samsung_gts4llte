@@ -49,6 +49,9 @@ KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-g
 # Lights
 $(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
 
+# Media
+TARGET_USES_ION := true
+
 # Partitions
 TARGET_FILE_SYSTEM_TYPE ?= ext4
 ifeq ($(TARGET_USE_EROFS),true)
