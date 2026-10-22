@@ -123,11 +123,6 @@ product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
 product/lib64/vendor.qti.hardware.seccam@1.0.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8998.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-impl.so
 vendor/lib/libOpenCL.so
 vendor/lib/libactuator_dw9807.so
 vendor/lib/libchromatix_s5k5e6yx_common.so
@@ -253,14 +248,8 @@ vendor/lib/libscvePanorama_lite.so
 vendor/lib/libseemore.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
@@ -285,7 +274,6 @@ vendor/lib64/libscvePanorama_lite.so
 vendor/lib64/libseemore.so
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
@@ -976,7 +964,6 @@ vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/vendor.samsung.hardware.base@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
@@ -1057,7 +1044,6 @@ vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/pa_daemon_qsee.rc
 vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.samsung.hardware.base@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc
@@ -1143,7 +1129,6 @@ vendor/firmware/dbmd8_va_fw.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 vendor/firmware/wlanmdsp.mbn
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib/P08UL_libTsAccmFront.so
 vendor/lib/P08UL_libTsAeFront.so
@@ -1394,16 +1379,10 @@ vendor/lib/libvqzip.so
 vendor/lib/libwpa_drv_oem.so
 vendor/lib/libxcv.camera.samsung.so
 vendor/lib/sensor_calibrate.so
-vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@4.0-impl.so
-vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib/vendor.samsung.hardware.camera.device@4.0.so
-vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/libAlacSwDec.so
@@ -1551,12 +1530,7 @@ vendor/lib64/libvndsecril-client.so
 vendor/lib64/libwpa_drv_oem.so
 vendor/lib64/libxcv.camera.samsung.so
 vendor/lib64/sensor_calibrate.so
-vendor/lib64/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib64/vendor.samsung.camera.device@4.0-impl.so
 vendor/lib64/vendor.samsung.hardware.base@1.0.so
-vendor/lib64/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib64/vendor.samsung.hardware.camera.device@4.0.so
-vendor/lib64/vendor.samsung.hardware.camera.provider@3.0.so
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
