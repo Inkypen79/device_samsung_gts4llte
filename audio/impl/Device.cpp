@@ -47,7 +47,9 @@ namespace util {
 using namespace ::android::hardware::audio::CORE_TYPES_CPP_VERSION::implementation::util;
 }
 
-Device::Device(audio_hw_device_t* device) : mIsClosed(false), mDevice(device) {}
+Device::Device(audio_hw_device_t* device) : mIsClosed(false), mDevice(device) {
+    ParametersUtil::applyQuadRotation(0);
+}
 
 Device::~Device() {
     (void)doClose();
