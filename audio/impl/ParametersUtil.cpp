@@ -21,6 +21,12 @@
 
 #include <util/CoreUtils.h>
 
+#include <tinyalsa/asoundlib.h>
+
+#include <cstdlib>
+#include <mutex>
+#include <string>
+
 namespace android {
 namespace hardware {
 namespace audio {
@@ -139,6 +145,68 @@ Result ParametersUtil::setParam(const char* name, float value) {
     return setParams(param);
 }
 
+
+// gts4llte: program the DSP channel mixer so the 2-channel stream feeds all four
+// TFA9896 amps (TDM slots 0..3), swapping sides according to display rotation.
+static const char* kQuadCtlPrefix = "AudStr 0 ChMixer ";
+static const int kQuadBeIdx = 88;  // TERT_TDM_RX_0 (kernel port index)
+static const int kQuadUnity = 16384;
+
+static void quadSetCtl(struct mixer* mixer, const std::string& name, unsigned int idx, int val) {
+    struct mixer_ctl* ctl = mixer_get_ctl_by_name(mixer, (kQuadCtlPrefix + name).c_str());
+    if (ctl == nullptr) {
+        ALOGW("quad: control '%s%s' not found", kQuadCtlPrefix, name.c_str());
+        return;
+    }
+    if (mixer_ctl_set_value(ctl, idx, val) != 0) {
+        ALOGW("quad: failed to set '%s%s'[%u]=%d", kQuadCtlPrefix, name.c_str(), idx, val);
+    }
+}
+
+void ParametersUtil::applyQuadRotation(int degrees) {
+    // Android rotation -> stock orientation index: (4 - deg/90) mod 4
+    static std::mutex lock;
+    std::lock_guard<std::mutex> guard(lock);
+    int orient;
+    switch (degrees) {
+        case 0: orient = 0; break;
+        case 90: orient = 3; break;
+        case 180: orient = 2; break;
+        case 270: orient = 1; break;
+        default: return;
+    }
+    // For each of the 4 output slots: 1 = take left, 0 = take right
+    static const int fromLeft[4][4] = {
+            {1, 0, 1, 0},  // 0: L R L R
+            {1, 1, 0, 0},  // 1: L L R R
+            {0, 1, 0, 1},  // 2: R L R L
+            {0, 0, 1, 1},  // 3: R R L L
+    };
+    struct mixer* mixer = mixer_open(0);
+    if (mixer == nullptr) {
+        ALOGW("quad: cannot open mixer");
+        return;
+    }
+    quadSetCtl(mixer, "Input Map", 0, 1);
+    quadSetCtl(mixer, "Input Map", 1, 2);
+    static const int outMap[4] = {1, 2, 4, 5};
+    for (unsigned i = 0; i < 4; i++) quadSetCtl(mixer, "Output Map", i, outMap[i]);
+    for (unsigned slot = 0; slot < 4; slot++) {
+        std::string name = "Weight Ch " + std::to_string(slot + 1);
+        bool left = fromLeft[orient][slot];
+        quadSetCtl(mixer, name, 0, left ? kQuadUnity : 0);
+        quadSetCtl(mixer, name, 1, left ? 0 : kQuadUnity);
+    }
+    // Cfg last: enable, rule, in_ch, out_ch, port idx. Also pushes live to an open stream.
+    quadSetCtl(mixer, "Cfg", 0, 1);
+    quadSetCtl(mixer, "Cfg", 1, 1);
+    quadSetCtl(mixer, "Cfg", 2, 2);
+    quadSetCtl(mixer, "Cfg", 3, 4);
+    quadSetCtl(mixer, "Cfg", 4, kQuadBeIdx);
+    mixer_close(mixer);
+    ALOGI("quad: rotation %d -> orientation %d", degrees, orient);
+}
+
 Result ParametersUtil::setParametersImpl(const hidl_vec<ParameterValue>& context,
                                          const hidl_vec<ParameterValue>& parameters) {
     AudioParameter params;
@@ -147,6 +215,9 @@ Result ParametersUtil::setParametersImpl(const hidl_vec<ParameterValue>& context
     }
     for (size_t i = 0; i < parameters.size(); ++i) {
         params.add(String8(parameters[i].key.c_str()), String8(parameters[i].value.c_str()));
+        if (parameters[i].key == "rotation") {
+            applyQuadRotation(atoi(parameters[i].value.c_str()));
+        }
     }
     return setParams(params);
 }
