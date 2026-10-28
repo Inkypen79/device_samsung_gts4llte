@@ -24,7 +24,7 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|6e2b594b44552b42000164c091af5cf7a4c508f5
 
 # Audio
-vendor/lib/hw/audio.primary.msm8998.so
+vendor/lib/hw/audio.primary.msm8998.so:vendor/lib/hw/audio.primary.sec_msm8998.so;FIX_SONAME
 vendor/lib/lib_SamsungRec_06005.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
