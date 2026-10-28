@@ -41,6 +41,7 @@ using namespace ::android::hardware::audio::CORE_TYPES_CPP_VERSION;
 
 class ParametersUtil {
    public:
+    static void applyQuadRotation(int degrees);
     Result setParam(const char* name, const char* value);
     Result getParam(const char* name, bool* value);
     Result getParam(const char* name, int* value);
