@@ -69,7 +69,9 @@
     </pcm_ids>
     <fm_pcm_ids>
         <device name="SND_DEVICE_OUT_FM_SPEAKER" type="out" id="38"/>
-        <device name="SND_DEVICE_OUT_FM_SPEAKER" type="in" id="5"/>
+        <device name="SND_DEVICE_OUT_FM_SPEAKER" type="in" id="34"/>
+        <device name="SND_DEVICE_OUT_FM_HEADSET" type="out" id="5"/>
+        <device name="SND_DEVICE_OUT_FM_HEADSET" type="in" id="34"/>
     </fm_pcm_ids>
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.13"/>
@@ -144,56 +146,56 @@
         <device name="SND_DEVICE_OUT_AP_TTY_HANDSET" interface="SLIMBUS_0_RX"/>
         <device name="SND_DEVICE_OUT_AP_TTY_HANDSET_EX" interface="SLIMBUS_0_RX"/>
 
-        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_MUSIC" backend="speaker" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_MUSIC" backend="speaker" interface="TERT_TDM_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EMERGENCY" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX_WB" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_COMM" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_COMM" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_OTHERS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_OTHERS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CHATON" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CHATON" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CARRIER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CARRIER_EVS" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CALLFORWARDING" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_WEBEX" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_FMC" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER_DSP" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER_DSP" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_FM_SPEAKER" backend="speaker" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_DEX_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX_WB" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_DEX_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_DEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_COMM" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_COMM" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_OTHERS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_OTHERS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CHATON" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CHATON" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CARRIER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_DEX_CARRIER_EVS" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CALLFORWARDING" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_WEBEX" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_FMC" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER_DSP" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER_DSP" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_FM_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
 
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="SLIMBUS_0_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_CALL_HEADSET" backend="headphones" interface="SLIMBUS_0_RX"/>
@@ -228,55 +230,55 @@
 
         <device name="SND_DEVICE_OUT_HEADPHONES_DSD" backend="headphones-dsd" interface="SLIMBUS_2_RX"/>
 
-        <device name="SND_DEVICE_OUT_BT_HEADSET" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC" backend="bt-sco" interface="QUAT_AUX_PCM_RX"/>
+        <device name="SND_DEVICE_OUT_BT_HEADSET" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC" backend="bt-sco" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC" backend="bt-sco" interface="SLIM_7_RX"/>
 
-        <device name="SND_DEVICE_OUT_BT_HEADSET_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_RX"/>
+        <device name="SND_DEVICE_OUT_BT_HEADSET_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC_16K" backend="bt-sco-wb" interface="SLIM_7_RX"/>
 
         <device name="SND_DEVICE_OUT_BT_A2DP" interface=""/>
 
@@ -307,15 +309,15 @@
         <device name="SND_DEVICE_OUT_DISPLAY_PORT" backend="display-port" interface="DISPLAY_PORT"/>
 
         <device name="SND_DEVICE_OUT_SPEAKER_RECEIVER" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="TERT_MI2S_RX-and-QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="TERT_MI2S_RX-and-QUAT_AUX_PCM_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" backend="speaker-and-display-port" interface="TERT_MI2S_RX-and-DISPLAY_PORT"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_PROXY" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_DOCK" backend="speaker" interface="TERT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="TERT_MI2S_RX-and-USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="TERT_TDM_RX_0-and-SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="TERT_TDM_RX_0-and-SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="TERT_TDM_RX_0-and-SLIM_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" backend="speaker-and-display-port" interface="TERT_TDM_RX_0-and-DISPLAY_PORT"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_PROXY" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_DOCK" backend="speaker" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="TERT_TDM_RX_0-and-USB_AUDIO_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker" interface="TERT_TDM_RX_0"/>
 
         <device name="SND_DEVICE_OUT_DOCK" interface=""/>
         <device name="SND_DEVICE_OUT_HDMI" interface=""/>
@@ -517,62 +519,62 @@
         <device name="SND_DEVICE_IN_AP_TTY_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_AP_TTY_FULL_MIC" interface="SLIMBUS_0_TX"/>
 
-        <device name="SND_DEVICE_IN_REC_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_REC_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_REALTIMELOOPBACK_BT_MIC" backend="bt-sco" interface="QUAT_AUX_PCM_TX"/>
+        <device name="SND_DEVICE_IN_REC_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_REC_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VR_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VR_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC" backend="bt-sco" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_REALTIMELOOPBACK_BT_MIC" backend="bt-sco" interface="SLIM_7_TX"/>
 
-        <device name="SND_DEVICE_IN_REC_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_REC_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC_16K" backend="bt-sco-wb" interface="QUAT_AUX_PCM_TX"/>
+        <device name="SND_DEVICE_IN_REC_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_REC_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VR_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VR_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
+        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC_16K" backend="bt-sco-wb" interface="SLIM_7_TX"/>
 
         <device name="SND_DEVICE_IN_REC_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
         <device name="SND_DEVICE_IN_VOICE_CALL_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
@@ -591,7 +593,7 @@
         <device name="SND_DEVICE_IN_CAPTURE_FM" backend="capture-fm" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_VOICE_WAKEUP_MIC" interface=""/>
         <device name="SND_DEVICE_IN_BABYCRY_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" interface=""/>
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" interface="SLIMBUS_0_TX"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
