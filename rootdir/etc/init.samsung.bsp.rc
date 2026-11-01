@@ -132,6 +132,6 @@ on shutdown
 # watchdog disable in case of charger & GSI booting
 on property:ro.bootmode=charger
     write /dev/watchdog "V"
-on property:ro.boot.verifiedbootstate=orange  # orange : unlocked state of GSI img
+on property:ro.boot.verifiedbootstate=*  # orange : unlocked state of GSI img
     write /dev/watchdog "V"
 
