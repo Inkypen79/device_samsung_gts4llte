@@ -383,18 +383,20 @@ vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libcpion.so
 vendor/lib/libdrmfs.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/liboemcrypto.so
-vendor/lib/libwvhidl.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
+
+# Widevine - from N770FXXU8HVK5
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|8141cc2bb369294190aa6e5096a0bb7b9277844d
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+vendor/lib/libwvhidl.so|f3f473cea9a196e6f8af601a9c61c61969d00047
 
 # DRM (Qualcomm Secure Execution Environment)
 system/lib/vendor.qti.hardware.qseecom@1.0.so;MODULE_SUFFIX=_system
