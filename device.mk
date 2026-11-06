@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service
+    android.hardware.camera.provider-service.samsung-msm8998
 
 # Charger
 PRODUCT_PACKAGES += \
