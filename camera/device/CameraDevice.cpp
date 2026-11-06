@@ -363,6 +363,10 @@ ndk::ScopedAStatus CameraDevice::setTorchMode(bool in_on) {
             return turnOnTorchWithStrengthLevel(mTorchStrengthLevel);
         }
 
+        if (!in_on && mModule->isSetTorchModeStrengthSupported()) {
+            mModule->setTorchMode(mCameraId.c_str(), true);
+        }
+
         status = getAidlStatus(mModule->setTorchMode(mCameraId.c_str(), in_on));
         if (!in_on && status == Status::OK) {
             // The API dictates that whenever the torch is turned off,
