@@ -6,3 +6,7 @@ service vendor.camera.provider /vendor/bin/hw/android.hardware.camera.provider-s
     ioprio rt 4
     capabilities SYS_NICE
     task_profiles CameraServiceCapacity MaxPerformance
+
+on boot
+    chown cameraserver cameraserver /sys/class/camera/flash/rear_flash
+    chmod 0660 /sys/class/camera/flash/rear_flash
