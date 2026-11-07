@@ -227,6 +227,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     fstab.zram \
     init.gts4llte.rc \
+    init.gts4lwifi.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

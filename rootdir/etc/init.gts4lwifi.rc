@@ -1,0 +1,4 @@
+on property:ro.radio.noril=yes
+    stop ril-daemon
+    stop ril-daemon1
+    stop secril_config
