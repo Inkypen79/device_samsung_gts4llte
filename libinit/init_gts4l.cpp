@@ -48,10 +48,13 @@ void set_ro_build_prop(const string &prop, const string &value, bool product = t
 }
 
 void set_build_fingerprint(string device, string name, string build) {
+    string build_description;
     string build_fingerprint;
 
+    build_description = name + "-user 10 QP1A.190711.020 " + build + " release-keys";
     build_fingerprint = "samsung/" + name + "/" + device + ":10/QP1A.190711.020/" + build + ":user/release-keys";
     set_ro_build_prop("fingerprint", build_fingerprint, false);
+    property_override("ro.build.description", build_description);
     property_override("ro.bootimage.build.fingerprint", build_fingerprint);
 
     set_ro_build_prop("name", name);

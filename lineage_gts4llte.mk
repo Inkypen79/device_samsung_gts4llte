@@ -25,6 +25,3 @@ PRODUCT_MODEL := SM-T835
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="gts4lltexx-user 10 QP1A.190711.020 T835XXU5CVG2 release-keys"
