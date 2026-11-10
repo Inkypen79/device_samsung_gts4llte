@@ -173,6 +173,11 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.rc \
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
