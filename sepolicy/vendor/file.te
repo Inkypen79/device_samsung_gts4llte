@@ -1,0 +1,2 @@
+type misc_file, fs_type;
+type omr_file, fs_type;
