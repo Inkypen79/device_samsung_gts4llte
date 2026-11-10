@@ -68,6 +68,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-01
 
+# SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
