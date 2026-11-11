@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,libui,legacy_gralloc,true)
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze \
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
