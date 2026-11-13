@@ -2,5 +2,20 @@
 type vendor_sysfs_display, fs_type, sysfs_type;
 type vendor_sysfs_mdnie, fs_type, sysfs_type;
 
+# EFS
+type app_efs_file, file_type, mlstrustedobject;
+type battery_efs_file, file_type;
+type carrier_efs_file, file_type;
+type cpk_efs_file, file_type;
+type drm_efs_file, file_type;
+type gatekeeper_efs_file, file_type;
+type imei_efs_file, file_type, mlstrustedobject;
+type mb_po_efs_file, file_type;
+type nfc_efs_file, file_type;
+type pfw_efs_file, file_type;
+type prov_efs_file, file_type;
+type sec_poc_file, file_type;
+type ssm_efs_file, file_type;
+type wifi_efs_file, file_type, mlstrustedobject;
 type misc_file, fs_type;
 type omr_file, fs_type;
