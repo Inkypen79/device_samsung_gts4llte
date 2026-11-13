@@ -1,3 +1,36 @@
+# Battery
+genfscon sysfs /devices/soc/soc:battery/power_supply						u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/soc:i2c@12/i2c-24/24-006b/power_supply/bq25898s-charger		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/soc:i2c@13/i2c-25/25-003d/s2mu004-charger/power_supply		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/soc:i2c@14/i2c-23/23-003b/power_supply/s2mu004-fuelgauge		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/soc:sec-multi-charger/power_supply/sec-multi-charger		u:object_r:sysfs_batteryinfo:s0
+
 # Display
-genfscon sysfs /devices/virtual/lcd/panel		u:object_r:vendor_sysfs_display:s0
-genfscon sysfs /devices/virtual/mdnie			u:object_r:vendor_sysfs_mdnie:s0
+genfscon sysfs /devices/virtual/lcd/panel			u:object_r:vendor_sysfs_display:s0
+genfscon sysfs /devices/virtual/mdnie				u:object_r:vendor_sysfs_mdnie:s0
+
+# Camera
+genfscon sysfs /devices/virtual/camera				u:object_r:sysfs_camera:s0
+
+# Input
+genfscon sysfs /class/input					u:object_r:sysfs_input:s0
+genfscon sysfs /devices/virtual/input				u:object_r:sysfs_input:s0
+genfscon sysfs /devices/virtual/sec/tsp				u:object_r:sysfs_touchscreen:s0
+
+# Power
+genfscon sysfs /power/volkey_wakeup				u:object_r:sysfs_power:s0
+
+# Proc
+genfscon proc /last_kmsg					u:object_r:proc_last_kmsg:s0
+
+# Sensors
+genfscon sysfs /devices/virtual/sensors				u:object_r:sysfs_sensors:s0
+
+# SSR
+genfscon sysfs /devices/soc/soc:qcom,kgsl-hyp/subsys2/name	u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/soc/17300000.qcom,lpass/subsys3/name	u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/soc/5c00000.qcom,ssc/subsys4/name	u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/soc/4080000.qcom,mss/subsys5/name	u:object_r:sysfs_ssr:s0
+
+# Thermal
+genfscon sysfs /devices/soc/780000.qcom,msm-core/uio/uio1/name	u:object_r:sysfs_uio_file:s0

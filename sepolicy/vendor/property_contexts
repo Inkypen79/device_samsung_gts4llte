@@ -1,0 +1,41 @@
+# Audio
+audio.				u:object_r:vendor_audio_prop:s0
+audio_hal.			u:object_r:vendor_audio_prop:s0
+
+# Bluetooth
+persist.vendor.bt.		u:object_r:vendor_bluetooth_prop:s0
+
+# Camera
+camera.				u:object_r:vendor_camera_prop:s0
+cameradaemon.			u:object_r:vendor_camera_prop:s0
+persist.camera.			u:object_r:vendor_camera_prop:s0
+ro.camera.			u:object_r:vendor_camera_prop:s0
+service.camera.			u:object_r:vendor_camera_prop:s0
+sys.cameramode.			u:object_r:vendor_camera_prop:s0
+
+# Display
+sdm.				u:object_r:vendor_display_prop:s0
+
+# Misc
+cpp.set.clock			u:object_r:exported_default_prop:s0
+disable.cpp.power.collapse	u:object_r:exported_default_prop:s0
+mdc.set_partnerid		u:object_r:exported_default_prop:s0
+persist.enable.max.pending.buf	u:object_r:exported_default_prop:s0
+persist.partial.skip		u:object_r:exported_default_prop:s0
+persist.sys.omc_etcpath		u:object_r:exported_default_prop:s0
+persist.sys.omc_support		u:object_r:exported_default_prop:s0
+ro.build.			u:object_r:exported_default_prop:s0
+ro.csc.				u:object_r:exported_default_prop:s0
+ro.omc.				u:object_r:exported_default_prop:s0
+ro.product_ship			u:object_r:exported_default_prop:s0
+ro.security.			u:object_r:exported_default_prop:s0
+ro.simbased.changetype		u:object_r:exported_default_prop:s0
+ubwc.				u:object_r:exported_default_prop:s0
+
+# RIL
+ril.NwNmId			u:object_r:vendor_radio_prop:s0
+ril.NwNmId2			u:object_r:vendor_radio_prop:s0
+rild.libpath			u:object_r:vendor_radio_prop:s0
+
+# Tee
+vendor.sys.qseecomd.enable	u:object_r:vendor_qseecomd_prop:s0

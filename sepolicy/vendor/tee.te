@@ -1,0 +1,7 @@
+allow tee efs_file:lnk_file read;
+
+r_dir_file(tee, efs_file);
+
+rw_dir_file(tee, gatekeeper_data_file);
+
+set_prop(tee, vendor_qseecomd_prop);

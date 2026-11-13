@@ -1,0 +1,7 @@
+type hal_hdcpkprov_default, domain;
+type hal_hdcpkprov_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_hdcpkprov_default)
+
+hal_server_domain(hal_hdcpkprov_default, hal_hdcpkprov)
+add_hwservice(hal_hdcpkprov_server, hal_hdcpkprov_hwservice)

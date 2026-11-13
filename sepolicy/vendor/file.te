@@ -1,6 +1,38 @@
+# Camera
+type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
+
 # Display
 type vendor_sysfs_display, fs_type, sysfs_type;
 type vendor_sysfs_mdnie, fs_type, sysfs_type;
 
+# EFS
+type app_efs_file, file_type, mlstrustedobject;
+type battery_efs_file, file_type;
+type carrier_efs_file, file_type;
+type cpk_efs_file, file_type;
+type drm_efs_file, file_type;
+type efs_block_device, dev_type;
+type gatekeeper_efs_file, file_type;
+type imei_efs_file, file_type, mlstrustedobject;
+type mb_po_efs_file, file_type;
+type nfc_efs_file, file_type;
+type pfw_efs_file, file_type;
+type prov_efs_file, file_type;
+type sec_poc_file, file_type;
+type ssm_efs_file, file_type;
+type wifi_efs_file, file_type, mlstrustedobject;
+
+# Input
+type sysfs_input, fs_type, sysfs_type;
+type sysfs_touchscreen, sysfs_type, fs_type;
+
+# Proc
+type proc_last_kmsg, fs_type, proc_type;
+
+# Rootfs
 type misc_file, fs_type;
 type omr_file, fs_type;
+
+# Trustonic
+type mobicore_vendor_data_file, file_type, data_file_type;
+type mobicore_vendor_file, file_type, vendor_file_type;

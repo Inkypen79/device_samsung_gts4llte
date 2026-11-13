@@ -1,0 +1,4 @@
+allow system_server proc_last_kmsg:file r_file_perms;
+
+dontaudit system_server mobicore_vendor_file:dir { open getattr read search };
+dontaudit system_server mobicore_vendor_file:file getattr;

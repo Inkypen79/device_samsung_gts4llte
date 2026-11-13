@@ -1,0 +1,4 @@
+allow time_daemon rild:dir search;
+
+r_dir_file(time_daemon, tee);
+r_dir_file(time_daemon, timeservice_app);

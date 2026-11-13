@@ -1,0 +1,17 @@
+type factory_adsp, domain;
+type factory_adsp_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(factory_adsp);
+
+allow factory_adsp diag_device:chr_file rw_file_perms;
+allow factory_adsp efs_file:lnk_file read;
+allow factory_adsp node:tcp_socket node_bind;
+#allow factory_adsp self:netlink_socket { bind create read write };
+#allow factory_adsp self:socket { create ioctl read write };
+#allow factory_adsp self:tcp_socket { bind create };
+allow factory_adsp sysfs_data:file r_file_perms;
+
+r_dir_file(factory_adsp, app_efs_file)
+r_dir_file(factory_adsp, efs_file)
+r_dir_file(factory_adsp, sensors_persist_file)
+r_dir_file(factory_adsp, vendor_sysfs_display)

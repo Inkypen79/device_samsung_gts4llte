@@ -1,0 +1,11 @@
+allow rild { app_efs_file imei_efs_file prov_efs_file }:dir r_dir_perms;
+allow rild { app_efs_file imei_efs_file prov_efs_file }:file r_file_perms;
+allow rild efs_file:lnk_file read;
+allow rild mnt_vendor_file:dir search;
+allow rild proc_net:file write;
+allow rild self:tun_socket create;
+allow rild tun_device:chr_file rw_file_perms;
+
+allowxperm rild tun_device:chr_file ioctl { TUNSETIFF TUNSETPERSIST };
+
+r_dir_file(rild, vendor_radio_data_file)

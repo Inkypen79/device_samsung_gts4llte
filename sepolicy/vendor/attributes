@@ -1,0 +1,12 @@
+attribute hal_hdcpkprov;
+attribute hal_hdcpkprov_client;
+attribute hal_hdcpkprov_server;
+attribute hal_tee;
+attribute hal_tee_client;
+attribute hal_tee_server;
+attribute hal_teeregistry;
+attribute hal_teeregistry_client;
+attribute hal_teeregistry_server;
+attribute hal_wvkprov;
+attribute hal_wvkprov_client;
+attribute hal_wvkprov_server;
