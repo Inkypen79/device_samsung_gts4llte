@@ -46,7 +46,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libdemangle.so')
         .add_needed('libprocessgroup.so'),
     ('vendor/lib/libsec-ril.so', 'vendor/lib64/libsec-ril.so'): blob_fixup()
-        .replace_needed('libcutils.so', 'libcutils-v29.so'),
+        .replace_needed('libcutils.so', 'libcutils-v29.so')
+        .binary_regex_replace(b'data/misc/radio/', b'data/vendor/sec/'),
     ('vendor/lib/libstagefright_omx_vendor.so'): blob_fixup()
         .add_needed('libshim_stagefright_foundation.so'),
     ('vendor/lib/libwvhidl.so',
