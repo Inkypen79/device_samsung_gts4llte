@@ -72,7 +72,6 @@ on post-fs-data
     mkdir /tombstones/wcnss 0771 system system
     mkdir /tombstones/dsps 0771 system system
     mkdir /data/vendor/hbtp 0750 system system
-    mkdir /data/misc/qvr 0770 system system
 
 #DBMDx
     chmod 0660 /dev/dbmdx-1
@@ -493,10 +492,3 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
-
-service qvrd /system/bin/qvrservice
-    class late_start
-    user system
-    group system camera graphics
-    socket qvrservice stream 0666 system system
-    capabilities SYS_NICE
