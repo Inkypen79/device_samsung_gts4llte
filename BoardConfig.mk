@@ -42,6 +42,13 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-6.5.0/bin
 
 # Partitions
+TARGET_FILE_SYSTEM_TYPE ?= ext4
+ifeq ($(TARGET_USE_EROFS),true)
+TARGET_FILE_SYSTEM_TYPE := erofs
+BOARD_EROFS_COMPRESSOR := lz4
+BOARD_EROFS_PCLUSTER_SIZE := 262144
+endif
+
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -53,7 +60,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 57140899840
 ALL_PARTITIONS := product system system_ext odm vendor
 
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := $(TARGET_FILE_SYSTEM_TYPE)) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 BOARD_SUPER_PARTITION_BLOCK_DEVICES := system odm vendor
