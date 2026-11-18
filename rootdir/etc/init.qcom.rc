@@ -1098,3 +1098,6 @@ on post-fs-data
     mkdir /efs/DAK 0775 system system
     restorecon -R /efs/DAK
     mkdir /data/vendor/gatekeeper 0770 system system
+    mkdir /data/vendor/gatekeeper/data 0770 system system
+    mkdir /data/vendor/gatekeeper/data/misc 0770 system system
+    mkdir /data/vendor/gatekeeper/data/misc/gatekeeper 0770 system system

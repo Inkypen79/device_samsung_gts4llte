@@ -1,7 +1,12 @@
 allow tee efs_file:lnk_file read;
 
+dontaudit tee gatekeeper_data_file:dir { read search };
+dontaudit tee system_data_file:dir read;
+
 r_dir_file(tee, efs_file);
 
-rw_dir_file(tee, gatekeeper_data_file);
+allow tee gatekeeper_vendor_data_file:dir rw_dir_perms;
+allow tee gatekeeper_vendor_data_file:file create;
+allow tee gatekeeper_vendor_data_file:file rw_file_perms;
 
 set_prop(tee, vendor_qseecomd_prop);

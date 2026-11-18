@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <gp_data_path>/data/vendor/gatekeeper/</gp_data_path>
+    <gp_whitelist_count>1</gp_whitelist_count>
+    <gp_whitelist_path>/data/misc/gatekeeper/</gp_whitelist_path>
+</config>
