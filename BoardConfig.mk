@@ -51,10 +51,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CONFIG := gts4llte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/gts4l
 
-TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-6.5.0/bin
-
 # Lights
 $(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
 
